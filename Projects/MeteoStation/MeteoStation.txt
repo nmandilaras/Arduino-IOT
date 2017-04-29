@@ -1,0 +1,30 @@
+=============================== MANUAL DOCUMENT - ARDUINO METEO STATION =============================================
+
+Basic Description
+  The purpose of this station is to capture the values of various physical quantities, store them, analyze them 
+  and finally present them to the user, in order to depict a general overview of the weather.
+  
+Main Concept
+  Meteo Station gathers information about temperature, humidity, brightness and presence of rain. Each time we 
+  collect a measurement from all the above sensors and we store them -CSV format- in the SD card. 
+  
+Display  
+  The Station features a screen where current values are being displayed. By pressing menu buttons the user 
+  is able to iterate through the values of the different quantities.
+  
+Energy policy
+  Station wakes up periodically once every minute to collect the measurments and then goes again in sleep mode.
+  In order to display current values in the screen an interruput is used to wake up the arduino. After one minute
+  of inactivity arduino goes back to sleep and the screen gets turned off. Power sourse is currently batteries.
+
+Boxing and Installation
+  Still pending ....
+
+========================================= FUTURE IMPROVMENTS =======================================================
+
+- More sensors like: Soil Humidity sensor, BMP185 Barometer 
+- Eliminate arduino board to only the basic components needed in order to save energy and space
+- Powered by solar panel and charging a battery (with or without an alternate power sourse) 
+- WebApp for displaying results (Station should work as a server presenting the results nicely in a graphic manner.
+    Probably arduino along with a wifi is not enough, raspberry pi is needed)
+    
